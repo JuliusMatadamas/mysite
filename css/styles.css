@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
-
 :root{
 	--header-height:  3rem;
 	--nav-width: 324px;
@@ -15,7 +13,7 @@
 	--first-color-light: #f5f5f5;
 	--first-color-lighten: #fffafa;
 
-	--body-font: 'Open Sans Condensed', sans-serif;
+	--body-font: 'Calibri', sans-serif;
 	--h1-font-size: 1.5rem;
 	--h2-font-size: 1.25rem;
 	--h3-font-size: 1rem;
@@ -171,4 +169,88 @@ img {
 .show {
 	left: 0;
 }
+
+.active {
+	color: var(--text-color);
+}
+
+/* HOME */
+.home__container {
+	align-items: center;
+	height: calc(100vh - var(--header-height));
+}
+.home__data {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+	text-align: center;
+}
+.home__img {
+	background-image: url('../img/profile.png');
+	background-image: center;
+	background-image: fixed;
+	background-image: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-radius: 50%;
+	height: 160px;
+	margin-bottom: var(--mb-2);
+	overflow: hidden;
+	padding-left: 0.8rem;
+	padding-top: 1.3rem;
+	width: 160px;
+}
+.home__title {
+	color: var(--first-color);
+	font-size: var(--h1-font-size);
+	font-weight: var(--font-semi-bold);
+}
+.home__profession {
+	color: var(--first-color-dark);
+	margin-bottom: var(--mb-5);
+}
+.home__social {
+	margin-bottom: 5rem;
+}
+.home__social-link {
+	background-color: var(--first-color);
+	border-radius: 50%;
+	color: var(--first-color-lighten);
+	display: inline-flex;
+	font-size: 1.1rem;
+	margin: 0 var(--mb-1);
+	padding: .40rem;
+	transition: .3s;
+}
+.home__social-link:hover {
+	background-color: var(--first-color-dark);
+}
+.home__button {
+	width: 100%;
+}
+
+/* BUTTONS */
+.button {
+	background-color: var(--first-color);
+	border-radius: .5rem;
+	color: var(--first-color-lighten);
+	display: inline-block;
+	font-weight: var(--font-semi-bold);
+	padding: 1rem 2rem;
+	transition: .3s;
+}
+.button:hover {
+	background-color: var(--first-color-dark);
+}
+.button__light {
+	background-color: var(--first-color-lighten);
+	color: var(--first-color);
+}
+.button__light:hover {
+	color: var(--first-color-lighten);
+}
+
 
