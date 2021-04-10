@@ -376,3 +376,52 @@ img {
 	width: 50%;
 }
 
+/* EDUCATION */
+.education__container {
+	row-gap: 2rem;
+	margin-bottom: 2rem;
+}
+.education__content {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+}
+.education__year, .education__race {
+	font-size: var(--h3-font-size);
+	margin-bottom: .25rem;
+}
+.education__university, .education__speciality {
+	display: block;
+	font-size: var(--smaller-font-size);
+}
+.education__year, .education__university {
+	text-align:  right;
+}
+.education__time {
+	justify-self: center;
+	padding: 0 1rem;
+}
+.education__rounder {
+	background-color: var(--first-color);
+	border-radius: 50%;
+	display: inline-block;
+	height: 12px;
+	position: relative;
+	width: 12px;
+}
+.education__rounder::before {
+	border: 1px solid var(--first-color);
+	border-radius: 50%;
+	content: '';
+	height: 20px;
+	position: absolute;
+	transform: translate(-4px, -4px);
+	width: 20px;
+}
+.education__line {
+	background-color: var(--first-color);
+	display: block;
+	height: 90%;
+	transform: translate(5px, -4px);
+	width: 2px;
+}
+
